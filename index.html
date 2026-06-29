@@ -292,7 +292,7 @@
         <a href="https://github.com/openmobilehub/attesto/tree/main/docs/reference">Docs</a>
         <a href="https://github.com/openmobilehub/attesto">GitHub</a>
       </div>
-      <a class="npm-btn" href="https://www.npmjs.com/package/@openmobilehub/attesto-gate">npm install</a>
+      <a class="npm-btn" href="https://www.npmjs.com/package/@openmobilehub/attestomcp-gate">npm install</a>
     </div>
   </nav>
 
@@ -302,7 +302,7 @@
       <h1>AI agents are learning to act.<span class="ask">Make them ask first.</span></h1>
       <p class="subhead">An agent proves a verifiable credential from the user's wallet before a consequential action completes. <b style="color:var(--ink)">Identity leads; payments is one application.</b></p>
       <div class="ctas">
-        <a class="cta-primary" href="https://www.npmjs.com/package/@openmobilehub/attesto-gate">npm i @openmobilehub/attesto-gate</a>
+        <a class="cta-primary" href="https://www.npmjs.com/package/@openmobilehub/attestomcp-gate">npm i @openmobilehub/attestomcp-gate</a>
         <a class="cta-ghost" href="https://github.com/openmobilehub/attesto/tree/main/docs/reference">Read the docs →</a>
       </div>
     </div>
@@ -311,7 +311,7 @@
       <div class="chat" role="img" aria-label="An AI agent pauses to prove an age_over_21 credential from the user's wallet before placing an order.">
         <div class="chat-head">
           <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-          <span class="chat-title">agent session · attesto-gate</span>
+          <span class="chat-title">agent session · attestomcp-gate</span>
         </div>
         <div class="chat-body" id="stage">
           <!-- 1: user message (typewriter) -->
@@ -361,7 +361,7 @@
   <section><div class="wrap">
     <div class="seclabel">Try it live</div>
     <h2>A complete MCP storefront — no setup required.</h2>
-    <p class="sub">attesto-storefront is a ready-to-run MCP server: nine shopping tools, a product widget, and a gated checkout. Add the hosted connector and order the whiskey — the age gate fires automatically.</p>
+    <p class="sub">attestomcp-storefront is a ready-to-run MCP server: nine shopping tools, a product widget, and a gated checkout. Add the hosted connector and order the whiskey — the age gate fires automatically.</p>
     <div class="try-cols">
 
       <div>
@@ -397,7 +397,7 @@
         <div class="demo-static" role="img" aria-label="An AI agent adds the whiskey, the checkout tool requires age_over_21, the user proves it on their device, and the order completes.">
           <div class="chat-head">
             <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-            <span class="chat-title">claude · attesto-storefront</span>
+            <span class="chat-title">claude · attestomcp-storefront</span>
           </div>
           <div class="demo-body-static">
             <div class="s-row user"><div class="s-bubble">Add the whiskey and check out.</div></div>
@@ -410,13 +410,13 @@
         <div class="module-cards">
           <div class="module-card">
             <div class="module-role">Demo app</div>
-            <div class="module-pkg">attesto-storefront</div>
+            <div class="module-pkg">attestomcp-storefront</div>
             <h4>Run &amp; customize</h4>
             <p>Nine MCP tools, product widget, gated checkout. Inject your catalog, own the code.</p>
           </div>
           <div class="module-card">
             <div class="module-role">Gate library</div>
-            <div class="module-pkg">attesto-gate</div>
+            <div class="module-pkg">attestomcp-gate</div>
             <h4>Gate any app</h4>
             <p>Mount on any Express app. <code style="color:var(--teal)">required()</code> / <code style="color:var(--teal)">optional()</code> over any credential.</p>
           </div>
@@ -440,10 +440,10 @@
   <section style="background:var(--bg2)"><div class="wrap">
     <div class="seclabel">Quickstart</div><h2>Mount it on any app in ten lines.</h2>
     <div class="code" style="max-width:48rem"><span class="c-key">const</span> store = <span class="c-fn">createStorefront</span>();
-<span class="c-key">const</span> attesto = <span class="c-key">new</span> <span class="c-fn">Attesto</span>();
-attesto.<span class="c-fn">mount</span>(store.app);  <span class="c-cm">// wires the /attesto/* wallet rails</span>
+<span class="c-key">const</span> attestomcp = <span class="c-key">new</span> <span class="c-fn">AttestoMCP</span>();
+attestomcp.<span class="c-fn">mount</span>(store.app);  <span class="c-cm">// wires the /attestomcp/* wallet rails</span>
 
-store.<span class="c-fn">gate</span>((order) =&gt; attesto.<span class="c-fn">requirements</span>(order, [
+store.<span class="c-fn">gate</span>((order) =&gt; attestomcp.<span class="c-fn">requirements</span>(order, [
   <span class="c-fn">required</span>(<span class="c-fn">age</span>.over(<span class="c-num">21</span>)),
   <span class="c-fn">optional</span>(<span class="c-fn">membership</span>.discount(<span class="c-num">10</span>)),
   <span class="c-fn">required</span>(<span class="c-fn">payment</span>.in(<span class="c-str">"usd"</span>)),
@@ -477,7 +477,7 @@ store.<span class="c-fn">gate</span>((order) =&gt; attesto.<span class="c-fn">re
   <!-- FOR DEVELOPERS -->
   <section style="background:var(--bg2)"><div class="wrap">
     <div class="seclabel">For developers</div><h2>Two packages. Apache-2.0. Ships its own types.</h2>
-    <div class="cta"><span class="btn">@openmobilehub/attesto-gate</span><span class="btn-ghost">@openmobilehub/attesto-storefront</span><span style="color:var(--mut)">· Docs · Examples · Reference demo →</span></div>
+    <div class="cta"><span class="btn">@openmobilehub/attestomcp-gate</span><span class="btn-ghost">@openmobilehub/attestomcp-storefront</span><span style="color:var(--mut)">· Docs · Examples · Reference demo →</span></div>
   </div></section>
 
   <footer><div class="wrap">Apache-2.0 · GitHub · npm · An Open Mobile Hub project (Linux Foundation / OpenWallet Foundation) · heading to GDC</div></footer>
