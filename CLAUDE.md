@@ -19,7 +19,7 @@ directly from `file://`.
 AttestoMCP: an AI agent proves a verifiable credential from the user's wallet **before** a consequential
 action completes. **Identity leads; payments is one application.** An OpenMobileHub / OpenWallet
 Foundation / AAIF Foundation project, heading to the Global Digital Collaboration Conference (Sept 1–2)
-co-presented with Multipaz. Two npm packages, both live at `0.1.0`: `@openmobilehub/attestomcp-gate`
+co-presented with Multipaz. Two npm packages, both live at `0.2.0`: `@openmobilehub/attestomcp-gate`
 (the Gate — `new AttestoMCP()`, `attestomcp.mount(app)`, policy of `required()`/`optional()` credentials)
 and `@openmobilehub/attestomcp-storefront`.
 
