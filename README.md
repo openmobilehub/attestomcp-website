@@ -1,6 +1,6 @@
 # attestomcp-website
 
-The marketing/landing site for **AttestoMcp — the consent layer for AI agents**.
+The marketing/landing site for **AttestoMCP — the consent layer for AI agents**.
 
 > An AI agent proves a verifiable credential from the user's wallet before a consequential
 > action completes. Identity leads; payments is one application.

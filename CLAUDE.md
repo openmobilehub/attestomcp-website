@@ -1,7 +1,7 @@
 # CLAUDE.md — attestomcp-website
 
 Project context for Claude (and humans). Read before editing. This repo is the **marketing/landing
-site for AttestoMcp** — "the consent layer for AI agents."
+site for AttestoMCP** — "the consent layer for AI agents."
 
 ## What this is
 
@@ -16,11 +16,11 @@ directly from `file://`.
 
 ## The product it markets (so the copy stays accurate)
 
-AttestoMcp: an AI agent proves a verifiable credential from the user's wallet **before** a consequential
+AttestoMCP: an AI agent proves a verifiable credential from the user's wallet **before** a consequential
 action completes. **Identity leads; payments is one application.** An OpenMobileHub / OpenWallet
 Foundation / AAIF Foundation project, heading to the Global Digital Collaboration Conference (Sept 1–2)
 co-presented with Multipaz. Two npm packages, both live at `0.1.0`: `@openmobilehub/attestomcp-gate`
-(the Gate — `new AttestoMcp()`, `attestomcp.mount(app)`, policy of `required()`/`optional()` credentials)
+(the Gate — `new AttestoMCP()`, `attestomcp.mount(app)`, policy of `required()`/`optional()` credentials)
 and `@openmobilehub/attestomcp-storefront`.
 
 ## Design

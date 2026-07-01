@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AttestoMcp — the consent layer for AI agents</title>
+<title>AttestoMCP — the consent layer for AI agents</title>
 <meta name="description" content="An AI agent proves a verifiable credential from the user's wallet before a consequential action completes. Identity leads; payments is one application. Open source, Apache-2.0.">
-<meta property="og:title" content="AttestoMcp — the consent layer for AI agents">
+<meta property="og:title" content="AttestoMCP — the consent layer for AI agents">
 <meta property="og:description" content="Make AI agents ask first: prove a verifiable credential before a consequential action completes.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -411,7 +411,7 @@
         <div class="yt-embed">
           <div class="yt-frame-wrap">
             <iframe src="https://www.youtube.com/embed/biTqHo2dL7M"
-                    title="AttestoMcp — consent flow demo"
+                    title="AttestoMCP — consent flow demo"
                     allowfullscreen loading="lazy" frameborder="0"></iframe>
           </div>
           <div class="yt-caption">
@@ -465,10 +465,10 @@
   <section style="background:var(--bg2)"><div class="wrap">
     <div class="seclabel">Quickstart</div><h2>Mount it on any app in ten lines.</h2>
     <div class="code" style="max-width:48rem"><span class="c-key">import</span> { <span class="c-fn">createStorefront</span> } <span class="c-key">from</span> <span class="c-str">"@openmobilehub/attestomcp-storefront/server"</span>;
-<span class="c-key">import</span> { <span class="c-fn">AttestoMcp</span>, <span class="c-fn">age</span>, <span class="c-fn">membership</span>, <span class="c-fn">payment</span>, <span class="c-fn">required</span>, <span class="c-fn">optional</span> } <span class="c-key">from</span> <span class="c-str">"@openmobilehub/attestomcp-gate"</span>;
+<span class="c-key">import</span> { <span class="c-fn">AttestoMCP</span>, <span class="c-fn">age</span>, <span class="c-fn">membership</span>, <span class="c-fn">payment</span>, <span class="c-fn">required</span>, <span class="c-fn">optional</span> } <span class="c-key">from</span> <span class="c-str">"@openmobilehub/attestomcp-gate"</span>;
 
 <span class="c-key">const</span> store = <span class="c-fn">createStorefront</span>();
-<span class="c-key">const</span> attestomcp = <span class="c-key">new</span> <span class="c-fn">AttestoMcp</span>();
+<span class="c-key">const</span> attestomcp = <span class="c-key">new</span> <span class="c-fn">AttestoMCP</span>();
 attestomcp.<span class="c-fn">mount</span>(store.app);  <span class="c-cm">// wires the /attestomcp/* wallet rails</span>
 
 store.<span class="c-fn">gate</span>((order) =&gt; attestomcp.<span class="c-fn">requirements</span>(order, [
